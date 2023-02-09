@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modul Kelas VII</title>
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      background-color: white;
+      background-image:;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    footer {
+      color: #fff;
+      background: #333;
+      position: relative;
+      font-size: 80%;
+    }
+    .footer-copyright {
+      width: 100%;
+      height: 40px;
+      background: #111;
+      padding: 10px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+    .footer-body {
+      margin-bottom: 40px;
+    }
+    .footer-body::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .footer-body > div {
+      float: left;
+      padding: 20px;
+    }
+    .footer-body > div:first-child {
+      font-size: 150%;
+      width: 35%;
+      text-align: center;
+    }
+    .footer-body > div:last-child {
+      width: 65%;
+    }
+    .footer-body ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+    }
+    .footer-body li > a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 7px;
+    }
+    Input,
+    Button {
+      Display: Bl;
+      Outline: None;
+      Width: 100%;
+      Padding: 0.5em;
+      Border-Radius: 10em;
+    }
+    .Home-btn {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      text-align: center;
+      color: black;
+    }
+    .Home-btn .Home-btn1 {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: gold;
+      background-size: 24px;
+      background-position: center;
+      float: right;
+      margin: 0 auto;
+      cursor: pointer;
+      box-shadow: 0 -2px 3px -1px blue;
+    }
+    .rumus-btn {
+      position: fixed;
+      bottom: 75px;
+      right: 10px;
+      text-align: center;
+      color: black;
+    }
+    .rumus-btn .rumus-btn1 {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: silver;
+      background-size: 24px;
+      background-position: center;
+      float: right;
+      margin: 0 auto;
+      cursor: pointer;
+      box-shadow: 0 -2px 3px -1px blue;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p id="home">
+      Silahkan dipilih Mata pelajaran yang diinginkan
+    </p>
+    <div class="Home-btn">
+      <button id="home-1" class="Home-btn1" onclick="Home()">Home</button>
+    </div>
+
+    <div class="rumus-btn">
+      <button id="rumus-1" class="rumus-btn1" onclick="keterangan()">Rumus</button>
+    </div>
+    <div id="Ipa">
+      <button id="ipa" onclick="IPA()">Ilmu Pengetahuan Alam</button>
+    </div>
+    <button id="ips" onclick="IPS()"> Ilmu Pengetahuan Sosial </button>
+    <button type="input" onclick="TIK()"> Teknologi Informatika </button>
+    <script type="text/javascript">
+      var firstName = prompt("Siapa namamu?");
+      if (firstName == "" || firstName == null) {
+        alert("Kamu tidak mengisi apapun...");
+      } else {
+        alert("Hi " + firstName + ", Silahkan pilih mata pelajaran yang diinginkan... :)");
+      }
+      function Home() {
+        document.getElementById("home").innerHTML = " Silahkan dipilih Mata pelajaran yang diinginkan";
+      }
+      function IPA() {
+        document.getElementById("home").innerHTML = "<h1 >Bab 1</h1> <h2>Hakikat Ilmu Sains dan Metode Ilmiah</h2> <li> Apa Itu Sains? </li><ol><li><p>Cabang-Cabang Ilmu Sains</p> <p> A | Sains adalah Biologi </p> <p> Biologi adalah ilmu tentang makhluk hidup</p> <p> Cabang-cabang Biologi </p> <p> ✓ | Zoologi </p> <p>Zoologi adalah ilmu tentang hewan/binatang</p> <p>✓ | Botani</p> <p>Botani adalah ilmu tentang tumbuhan</p> <p>✓ | Mikrobiologi</p> <p>Mikrobiologi adalah ilmu tentang makhluk yang berukuran sangat kecil</p> <p>✓ | Entomologi</p> <p>Entomologi adalah ilmu tentang serangga</p> <p>B | Sains adalah Fisika</p> <p>Fisika adalah ilmu tentang gejala,fenomena alam,dan sifat benda-benda disekitar, termasuk tentang perpindahan dan energi.</p> <p>Cabang-cabang Fisika</p> <p>✓ | Mekanika</p> <p>Mekanika adalah ilmu tentang gerak benda</p> <p>✓ | Elektronika</p> <p>Elektronika adalah ilmu tentang arus listrik dan magnet</p> <p>✓ | Optika Geometris</p> <p>Optika Geometris adalah ilmu tentang alat-alat optik</p> <p>C | Sains adalah Kimia</p> <p>Kimia adalah ilmu tentang berbagai hal mengenai materi, yaitu terbuat dari apa, sifat dan perubahan dalam suatu reaksi kimia</p> <p>Cabang-cabang Kimia</p> <p>✓ | Farmasi</p> <p>Farmasi adalah ilmu tentang obat-obatan</p> <p>✓ | RadioKimia</p> <p>Radiokimia adalah ilmu tentang zat-zat radioaktif</p> <p>✓ | Kimia Organik</p> <p>Kimia Organik adalah ilmu tentang bahan kimia dalam makhluk hidup</p> <p>✓ | Kimia Anorganik</p> <p>Kimia Anorganik adalah ilmu tentang bahan kimia dalam benda-benda</p> <p> D | Sains adalah Geologi</p> <p>Geologi adalah ilmu mengenai bumi dan perubahannya</p> <p>Cabang-cabang ilmu Geologi</p> <p>✓ | Vulkanologi</p> <p>Vulkanologi adalah ilmu tentang gunung berapi</p> <p>✓ | Seismologi</p> <p>Seismologi adalah ilmu tentang Gempa Bumi</p> <p>✓ | Palentologi</p> <p>Palentologi adalah ilmu tentang fosil</p> <p>E | Sains adalah Astronomi</p> <p>Astronomi adalah ilmu tentang planet, bintang, dan alam semesta. Semua benda langit dipelajari dalam astronomi termasuk matahari dan terjadinya gerhana,komet, dan asteroid</p> <p>F | Sains adalah Ekologi</p> <p>Ekologi adalah ilmu tentang hubungan timbal balik antara makhluk hidup dan lingkungannya, Ekologi membahas : Polusi Udara, Tanah, dan Air </p></ol></li> <li>Metode Ilmiah</li> <p><ol>Langkah-langkah Metode Ilmiah</p></ol> <ol><li>Observasi</li> <li>Hipotesis (dugaan sementara)</li> <li>Rancang Percobaan</li> <li>Eksperimen</li> <li>Mengumpulkan data</li> <li>Kesimpulan</li></ol> <li>Pengukuran <ol><p>Membandingkan besaran dengan sebuah satuan</p></li> <p>A | Besaran</p> <p>Besaran adalah segala sesuatu yang dapat diukur dan dinyatakan dengan angka yang diikuti oleh satuan</p> <p>✓ | Besaran Pokok</p> <p>Besaran pokok adalah besaran yang satuannya telah ditetapkan terlebih dahulu, dan tidak diturunkan dari besaran lain</p> <p>✓ | Besaran Turunan</p> <p>Besaran Turunan adalah besaran yang satuannya diturunkan dari besaran pokok</p> <p>*Konsentrasi larutan</p> <p>K= Massa pelarut : Massa terlarut</p> <p>*Laju Pertumbuhan</p> <p>LP= Pertambahan Tinggi : Selang Waktu</p><p>✓ | Besaran Skala</p> <p>Besaran Skala adalah besaran yang hanya memiliki nilai</p> <p>✓ | Besaran Vektor</p> <p>Besaran Vektor adalah besaran yang memiliki nilai dan arah</p> <p>B | Satuan</p> <p>Satuan adalah segala sesuatu yang digunakan untuk menyatakan hasil dari pengukuran</p> <p>C | Mikrometer Sekrup</p> <p>Skala terkecil : 0.01mm | 0.001cm</p> <p>✓ | Cara mengukur</p> <p>HP= SU+SN</p> <p>contoh : diketahui Skala Utama : 4mm & Skala Nonius : 30mm</p> <p>Jawab :</p> <p>HP=SU+SN</p> <p>=4mm + (0.01 × 30)mm</p> <p>=4mm + 0.30mm</p> <p>=4.30mm/0.430cm</p></ol> <h1>Bab 2</h1> <h2>Zat dan Perubahannya</h2> <li>Sifat Zat</li> <ol><p>✓ Menepati Ruang</p> <p>✓ Memiliki Massa</p></ol> <li>Wujud Sifat Zat</li> <ol> <p>✓ | Padat</p> <p><ol><li>Bentuknya Tetap</li> <li>Tidak Dapat Di Tekan</li> <li>Partikelnya Rapat</li> </ol></p> <p>✓ | Cair</p> <p><ol><li>Bentuknya berubah sesuai wadah</li> <li>Ikatan partikel yang tidak kuat</li> <li>Dapat mengalir</li> </ol></p> <p>✓ | Gas</p> <p> <ol><li>Partikel yang renggang</li> <li>Ikatan partikel yang lemah</li> <li>Dapat menyebar dengan bebas</li> </ol></p></ol> <li>Perubahan Zat</li><ol><p>✓ | Padat</p> <p> <ol><li>Padat ➡ ️Cair = Mencair</li> <li>Padat ➡️ Gas = Menyublim</li> </ol></p> <p>✓ | Gas</p> <p><ol><li>Gas ➡️ Padat = Mengkristal</li> <li>Gas ➡️ Cair = Mengembun</li></ol></p> <p>✓ | Cair</p> <p><ol><li>Cair ➡️ Gas = Menguap</li><li>Cair ➡️Padat = Membeku</li></ol></p></ol> <li>Perubahan</li> <ol><p>Perubahan Fisika adalah perubahan suatu zat yang tidak menghasilkan zat jenis baru</p></ol> <li>Perubahan kimia/reaksi kimia</li> <ol><p>Perubahan Kimia adalah suatu zat yang menghasilkan zat jenis baru</p> <p>Ciri-ciri perubahan kimia adalah :</p> <p> <ol><li>Terjadinya perubahan warna</li> <li>Terjadinya perubahan suhu</li> <li>Timbulnya bau</li> <li>Timbulnya gas tertentu</li> <li>Terjadinya endapan</li></ol></p></ol> <h1>Bab 3</h1> <h2>Suhu, kalor dan pemuaian</h2> <li>Suhu</li> <ol>Suhu adalah ukuran derajat panas suatu benda <p>A |  Satuan Suhu</p> <p>✓ °C = 0° - 100°</p> <p>✓ °R = 0° - 80°</p> <p>✓ °F = 32° - 212°</p> <p>✓ K = 273° - 737°</p> <p>✓ | Selisih</p> <p>°C = 0° = 5</p> <p>°R = 0° = 4</p> <p>°F = -32° = 9</p> <p>K = -273° = 5</p> <p>Cara menghitung</p> <p>✓ Perbandingan suhu yang ditanya : Perbandingan suhu yang diketahui × Derajat yang di ketahui</p></ol> <li>Kalor</li> <ol><p>Kalor merupakan salah satu bentuk energi yang dapat menyebabkan perubahan suhu</p> <p>✓ 1 kalori = 4.182 joule / 4.2 joule</p> <p>✓ 1 joule = 0.24 kalori</p> <p>✓ 1 kkalori = 4.200 joule / 4.2 × 10³ joule</p> <p>✓ | Rumus = Q = M × C × ∆t</p> <p> keterangan </p> <p>✓ Q = Banyak energi kalor yang diperlukan / dilepaskan ( kkal / joule) </p> <p> M = Massa benda (kg) </p> <p>C = Kalor jenis benda (kkal/kg °C atau Joule/kg °C) </p> <p> ∆t = Perubahan suhu</p> <p>A | Perpindahan kalor</p> <p>Kalor dapat berpindah dengan</p> <p>✓ | Konduksi (Hantaran)</p> <p>Konduksi adalah perpindahan kalor melalui zat tanpa disertai perpindahan partikel zat</p> <p>Kondisi digolongkan menjadi</p> <p>✓ Konduktor</p> <p>Konduktor adalah benda yang dapat menghantarkan kalor dengan baik</p> <p>Contoh : Besi, tembaga, dll</p> <p>✓ Isolator</p> <p>Isolator adalah benda yang daya hantar kalornya buruk</p> <p>Contoh : kayu, kain, dll</p> <p>✓ | Radiasi</p> <p>Radiasi adalah perpindahan kalor tanpa melalui zat perantara</p> <p>Contoh : Cahaya matahari</p> <p>✓ | Konveksi</p> <p>Konveksi adalah perpindahan kalor melalui zat dengan disertai perpindahan partikel zat</p></ol> <li>Pemuaian</li> <ol> <p>✓ | Pemuaian Panjang</p> <p>Rumus : </p> <p>✓ Lt = 1 + α × ∆T</p> <p>✓ ∆L = L0 × α × ∆t</p> <p>✓ | Pemuaian Lebar</p> <p></p> </ol>";
+        document.getElementById("rumus-1").onclick = function() {
+          alert("I am a dialog box!")
+        }
+      }
+      function IPS() {
+        document.getElementById("home").innerHTML = "";
+        var x = document.getElementById("rumus-1");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <div class="footer-body">
+      <div>
+        Farhan's Library.
+      </div>
+      <div>
+        <p>
+        </p>
+        <ul>
+          <li><a href="#"> Tentang</a></li>
+          <li><a href="https://wa.me/6283196318890"> Kontak </a></li>
+          <li><a href="#"> Tema& Kondisi </a></li>
+          <li><a href="#"> Kebijakan pribadi </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <a href="© Copyright Farhan's Library.">© Copyright Farhan's Library.</a>
+    </div>
+  </footer>
+</body>
+</html>
